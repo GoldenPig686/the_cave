@@ -108,6 +108,9 @@ position = Vector2(-313, -168)
 [node name="Alia" parent="World" instance=ExtResource("3_eyog5")]
 metadata/_edit_group_ = true
 
+[node name="Camera2D" type="Camera2D" parent="World/Alia"]
+zoom = Vector2(5, 5)
+
 [node name="CanvasModulate" type="CanvasModulate" parent="World"]
 color = Color(0, 0, 0, 1)
 metadata/_edit_group_ = true
