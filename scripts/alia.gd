@@ -10,7 +10,7 @@ var direction: float = 0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var animated_sprite_2d := $AnimatedSprite2D as AnimatedSprite2D
 
 
 func _physics_process(delta: float) -> void:
@@ -60,3 +60,13 @@ func _process(_delta: float) -> void:
 	):
 		animated_sprite_2d.flip_h = !animated_sprite_2d.flip_h
 		sprite_direction = -sprite_direction
+	
+	# Camera
+	# Move the camera according to the mouse position if the mouse is in the
+	# viewport.
+	if get_viewport_rect().abs().has_point(
+		get_viewport().get_mouse_position()
+	):
+		($Camera2D as Camera2D).offset = (
+			get_global_mouse_position() - global_position
+		) * 0.4
