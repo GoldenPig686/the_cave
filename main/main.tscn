@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://dweacu28wheof"]
 
-[ext_resource type="Script" path="res://scripts/main.gd" id="1_xn0qq"]
-[ext_resource type="Script" path="res://scripts/game_world.gd" id="2_5nhde"]
-[ext_resource type="PackedScene" uid="uid://bbbtqelee1w83" path="res://scenes/alia.tscn" id="3_eyog5"]
-[ext_resource type="Texture2D" uid="uid://cn6ei4vd72bu4" path="res://assets/atlas.png" id="4_fxcvo"]
-[ext_resource type="Script" path="res://scenes/tile_setter.gd" id="5_gyjnk"]
-[ext_resource type="PackedScene" uid="uid://g13i1d7ndt8u" path="res://scenes/light.tscn" id="6_jcd1j"]
+[ext_resource type="Script" path="res://main/main.gd" id="1_xn0qq"]
+[ext_resource type="Script" path="res://main/game_world.gd" id="2_5nhde"]
+[ext_resource type="PackedScene" uid="uid://bbbtqelee1w83" path="res://alia/alia.tscn" id="3_eyog5"]
+[ext_resource type="Texture2D" uid="uid://cn6ei4vd72bu4" path="res://main/atlas.png" id="4_fxcvo"]
+[ext_resource type="Script" path="res://main/tile_setter.gd" id="5_gyjnk"]
+[ext_resource type="PackedScene" uid="uid://g13i1d7ndt8u" path="res://light/light.tscn" id="6_jcd1j"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_lj6rs"]
 polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -77,7 +77,7 @@ occlusion_layer_0/light_mask = 1
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_vef54")
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node"]
 script = ExtResource("1_xn0qq")
 
 [node name="World" type="Node2D" parent="."]

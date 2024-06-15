@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brtm5ijkfijmh"
-path="res://.godot/imported/atlas.png-cfaa6359ecb143a69240babd00ec96b9.ctex"
+uid="uid://dnjqwnvevfj30"
+path="res://.godot/imported/light.png-7b5a6c248db6d87617e690ba9470b0fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/atlas.png"
-dest_files=["res://.godot/imported/atlas.png-cfaa6359ecb143a69240babd00ec96b9.ctex"]
+source_file="res://light/light.png"
+dest_files=["res://.godot/imported/light.png-7b5a6c248db6d87617e690ba9470b0fa.ctex"]
 
 [params]
 
