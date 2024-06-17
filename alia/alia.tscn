@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://alia/alia.gd" id="1_6ff17"]
 [ext_resource type="Texture2D" uid="uid://bkuietl0i4ot6" path="res://alia/alia_sheet.png" id="2_brgw1"]
-[ext_resource type="Script" path="res://alia/Weapons.gd" id="3_5rped"]
-[ext_resource type="Texture2D" uid="uid://u3i7p7p00iuq" path="res://flashlight.png" id="4_msarc"]
+[ext_resource type="PackedScene" uid="uid://b537yon36gk51" path="res://flashlight/flashlight.tscn" id="3_h8jp0"]
+[ext_resource type="Texture2D" uid="uid://bjr2juih44xdb" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="6_55olc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jmd4m"]
 atlas = ExtResource("2_brgw1")
@@ -109,7 +109,13 @@ zoom = Vector2(5, 5)
 
 [node name="Weapons" type="Node2D" parent="."]
 position = Vector2(0, -6)
-script = ExtResource("3_5rped")
+metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Weapons"]
-texture = ExtResource("4_msarc")
+[node name="Flashlight" parent="Weapons" instance=ExtResource("3_h8jp0")]
+
+[node name="Vision" type="PointLight2D" parent="."]
+position = Vector2(0, -9)
+energy = 0.5
+texture = ExtResource("6_55olc")
+texture_scale = 0.3
+metadata/_edit_lock_ = true

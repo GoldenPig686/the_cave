@@ -49,8 +49,13 @@ func _process(_delta: float) -> void:
 	if not is_on_floor():
 		animated_sprite_2d.play("jump")
 	
-	# Set the animation according to the global mouse position. That is, make
-	# the animation always faces the cursor.
+	# Features for Weapons.
+	# Make the weapons aim at the cursor.
+	var weapons: Node2D = $Weapons
+	weapons.look_at(get_global_mouse_position())
+	
+	# Make the animation always faces the cursor and make sure the right
+	# direction of the weapons.
 	if (
 		global_position.direction_to(
 			get_global_mouse_position()
@@ -60,6 +65,7 @@ func _process(_delta: float) -> void:
 	):
 		animated_sprite_2d.flip_h = !animated_sprite_2d.flip_h
 		sprite_direction = -sprite_direction
+		weapons.scale.y = -weapons.scale.y
 	
 	# Camera
 	# Move the camera according to the mouse position if the mouse is in the

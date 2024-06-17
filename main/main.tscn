@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dweacu28wheof"]
+[gd_scene load_steps=9 format=3 uid="uid://dweacu28wheof"]
 
 [ext_resource type="Script" path="res://main/main.gd" id="1_xn0qq"]
 [ext_resource type="Script" path="res://main/game_world.gd" id="2_5nhde"]
@@ -6,9 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cn6ei4vd72bu4" path="res://main/atlas.png" id="4_fxcvo"]
 [ext_resource type="Script" path="res://main/tile_setter.gd" id="5_gyjnk"]
 [ext_resource type="PackedScene" uid="uid://g13i1d7ndt8u" path="res://light/light.tscn" id="6_jcd1j"]
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_lj6rs"]
-polygon = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vef54"]
 resource_name = "background"
@@ -19,7 +16,6 @@ texture = ExtResource("4_fxcvo")
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/1 = 1
-0:0/1/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_lj6rs")
 0:0/1/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/1/physics_layer_0/angular_velocity = 0.0
 0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -91,18 +87,23 @@ script = ExtResource("5_gyjnk")
 metadata/_edit_group_ = true
 
 [node name="Light" parent="World/TileMap" instance=ExtResource("6_jcd1j")]
+visible = false
 position = Vector2(36, -23)
 
 [node name="Light2" parent="World/TileMap" instance=ExtResource("6_jcd1j")]
+visible = false
 position = Vector2(196, -100)
 
 [node name="Light3" parent="World/TileMap" instance=ExtResource("6_jcd1j")]
+visible = false
 position = Vector2(-105, -63)
 
 [node name="Light4" parent="World/TileMap" instance=ExtResource("6_jcd1j")]
+visible = false
 position = Vector2(-264, -144)
 
 [node name="Light5" parent="World/TileMap" instance=ExtResource("6_jcd1j")]
+visible = false
 position = Vector2(-313, -168)
 
 [node name="Alia" parent="World" instance=ExtResource("3_eyog5")]

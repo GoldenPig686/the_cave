@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b537yon36gk51"]
+
+[ext_resource type="Texture2D" uid="uid://u3i7p7p00iuq" path="res://flashlight/flashlight.png" id="1_b7lfi"]
+[ext_resource type="Texture2D" uid="uid://w7g5s5lok207" path="res://flashlight/spot_light.png" id="2_0vkao"]
+[ext_resource type="Script" path="res://flashlight/flashlight.gd" id="2_hrrcu"]
+
+[node name="Flashlight" type="Sprite2D"]
+texture = ExtResource("1_b7lfi")
+script = ExtResource("2_hrrcu")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(104, 0)
+texture = ExtResource("2_0vkao")
+texture_scale = 0.8

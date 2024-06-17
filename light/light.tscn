@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://g13i1d7ndt8u"]
 
 [ext_resource type="Texture2D" uid="uid://dnjqwnvevfj30" path="res://light/light.png" id="1_ssq3q"]
-[ext_resource type="Texture2D" uid="uid://bjr2juih44xdb" path="res://light/2d_lights_and_shadows_neutral_point_light.webp" id="2_urcqk"]
+[ext_resource type="Texture2D" uid="uid://bjr2juih44xdb" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="2_u8vx0"]
 
 [node name="Light" type="Sprite2D"]
 texture = ExtResource("1_ssq3q")
@@ -10,4 +10,4 @@ texture = ExtResource("1_ssq3q")
 color = Color(1, 1, 0.866667, 1)
 energy = 1.5
 shadow_enabled = true
-texture = ExtResource("2_urcqk")
+texture = ExtResource("2_u8vx0")

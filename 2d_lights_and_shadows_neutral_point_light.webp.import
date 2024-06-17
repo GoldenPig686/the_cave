@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u3i7p7p00iuq"
-path="res://.godot/imported/flashlight.png-b3ba371939be62918e933c53704c9603.ctex"
+uid="uid://bjr2juih44xdb"
+path="res://.godot/imported/2d_lights_and_shadows_neutral_point_light.webp-65502514064ef8af4bce05336c6482e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://flashlight.png"
-dest_files=["res://.godot/imported/flashlight.png-b3ba371939be62918e933c53704c9603.ctex"]
+source_file="res://2d_lights_and_shadows_neutral_point_light.webp"
+dest_files=["res://.godot/imported/2d_lights_and_shadows_neutral_point_light.webp-65502514064ef8af4bce05336c6482e4.ctex"]
 
 [params]
 

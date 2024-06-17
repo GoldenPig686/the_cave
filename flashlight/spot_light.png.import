@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c73na70jh0cbs"
-path="res://.godot/imported/test_spirit.png-d278f4406c2fb727bb905470b1edb8e7.ctex"
+uid="uid://w7g5s5lok207"
+path="res://.godot/imported/spot_light.png-26de64be69ff78ab4af3b0e2e25ab6a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://test_spirit.png"
-dest_files=["res://.godot/imported/test_spirit.png-d278f4406c2fb727bb905470b1edb8e7.ctex"]
+source_file="res://flashlight/spot_light.png"
+dest_files=["res://.godot/imported/spot_light.png-26de64be69ff78ab4af3b0e2e25ab6a5.ctex"]
 
 [params]
 
