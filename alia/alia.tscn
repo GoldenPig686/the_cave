@@ -114,8 +114,8 @@ metadata/_edit_group_ = true
 [node name="Flashlight" parent="Weapons" instance=ExtResource("3_h8jp0")]
 
 [node name="Vision" type="PointLight2D" parent="."]
-position = Vector2(0, -9)
+position = Vector2(0, -12)
 energy = 0.5
+shadow_enabled = true
 texture = ExtResource("6_55olc")
 texture_scale = 0.3
-metadata/_edit_lock_ = true
